@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #6b9dfa;
+    
+    --text-color-dark: #ffffff;
+    --bg-color-dark: #121212;
+    --text-color-light: #000000;
+    --bg-color-light: #e5eaf0;
+}
+
+body {
+
+     /* background-color: #f0f8ff; */
+     /* background-color: indigo-300; */
+    margin: 0; /* Removes default margin */
+   background-image: url("images/backke.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+.navbar, footer {
+    transition: background-color 0.3s;
+}
+
+.navbar-dark.bg-dark {
+    background-color: var(--bg-color-dark)
+    
+}
+.navbar{
+    background-color: rgba(252, 128, 80, 0.226);
+    border: 1px solid rgb(109, 3, 3);
+    border-radius: 28px;
+    padding: 5px;
+}
+h1,h6{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(115, 241, 241);
+}
+h2{
+    font-weight: bold;
+    color:rgb(221, 221, 248);
+}
+h5{
+    font-weight: bold;
+    color: #000000;
+}
+h3{
+    font-weight: bold;
+    color: #f3dede;
+}
+p{
+    font-weight: 700;
+    color: #d6d1d1d0;
+}
+.creator-site{
+    background-color: rgba(61, 53, 53, 0.397);
+}
+.banner-my-img{
+    border: 2px solid rgb(245, 226, 192);
+   
+}
+.contact-details{
+    background-color: rgb(243, 214, 226);
+    border: 3px solid rgb(253, 195, 219);
+    border-radius: 7px;
+    padding: 8px;
+}
+footer {
+    background-color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5c1283;
+}
+.icon-size {
+width: 50px;
+height: 50px;
+}
+
+.toggle-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-mode.light-mode {
+    color: var(--text-color-light);
+}
